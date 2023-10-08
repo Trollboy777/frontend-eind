@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eindopdracht</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <nav>
+        <div class="logo-text">
+            <img src="images/Poké_Ball_icon.svg.png" alt="PokeBall">
+            <h3>Logo</h3>
+        </div>
+        <div class="links-container">
+            <a href="#index.html">Home</a>
+            <a href="#Intro">Intro</a>
+            <a href="#games">Games</a>
+            <a href="#form">Form</a>
+            <a href="#footer">Cookies</a>
+            
+        </div>
+
+    </nav>
+
+    <header>
+        <div class="Restaurant-Main">
+            <h1 id="Intro">Recente Pokemon Games</h1>
+            <h2>Welkom op dit website. Hieronder zie je 3 Pokemon Games die in laatste 3 jaar zijn uitgekomen. <br>
+                Daaronder heb je ook
+                een form die je kan invullen voor eventuele vragen.</h2>
+            <a href="https://nl.wikipedia.org/wiki/Pok%C3%A9mon" class="header-button">Geschiedenis</a>
+            <a href="https://www.statista.com/statistics/1072224/pokemon-unit-sales-worldwide/" class="header-button">Verkoopcijfers</a>
+        </div>
+
+
+    </header>
+
+    <main>
+        <h1 class="subtitel" id="games">Recente Pokemon Games</h1>
+        <section>
+
+
+            <div class="Games-container">
+
+                <div class="Games-info">
+                    <div class="gameimgBox">
+                        <img src="images/pokemon vioet.jpg" class="game-cover" alt="PokemonViolet">
+                    </div>
+
+                    <div class="box">
+                        <h2>Pokémon Violet</h2>
+                        <br>
+                        ★ ★ ★ ★ 
+                        <p>Pokémon Violet heeft nieuwe Pokmeon en brengt zich nieuwe concepten mee.
+                            Het brengt zich ook gevaren mee,zoals dat het best wel laggy is.
+                        </p>
+                        <a href="https://scarletviolet.pokemon.com/nl-nl/" class="game-button">Info</a>
+                    </div>
+                </div>
+
+
+
+
+
+
+                <div class="Games-info">
+                    <img src="images/legends arceus.jpg" class="game-cover" alt="PokemonLegendsArceus">
+                    <div class="box">
+                        <h2>Pokémon Legends Arceus</h2>
+                        ★ ★ ★ ★ ★
+                        <p>Pokémon Legends Arceus is de eerste open-world Pokemon Game ooit. Het speelt zich af in
+                            Hisui,
+                            wat de
+                            verleden is van Sinnoh, de Gen 4 Games.</p>
+                        <a href="https://legends.pokemon.com/nl-nl/" class="game-button">Info</a>
+                    </div>
+                </div>
+
+
+                <div class="Games-info">
+                    <img src="images/bd.jpg" class="game-cover" alt="PokemonBrilliantDiamond">
+                    <div class="box">
+                        <h2>Pokémon Brilliant Diamond</h2>
+                        ★ ★ ★
+                        <p>Pokémon Brilliant Diamond is de remake van Pokemon Diamond op de DS. Dit game is een beetje controversieel, want de remake is meer een port.</p>
+                        <a href="https://diamondpearl.pokemon.com/nl-be/" class="game-button">Info</a>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+            
+        </section>
+        <div class="form-title">
+            <h1 class="subtitel-form" id="form">Form</h1>
+        </div>
+        <section class="forms-section">
+            
+            
+            
+            <form>
+                <div class="name-container">
+
+                    <div class="names">
+                        <label for="first-name">Voornaam</label>
+                        <input type="text" id="first-name" name="first-name" placeholder="Voornaam" required>
+                    </div>
+
+                    <div class="names">
+
+
+                        <label for="last-name">Achternaam</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="Achternaam" required>
+                    </div>
+
+
+                </div>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+
+                <div class="citydate-container">
+
+                    <div class="name">
+                        <label for="city">Woonplaats</label>
+                        <input type="text" id="city" name="city" placeholder="Woonplaats" required>
+                    </div>
+
+                    <div class="name">
+
+
+                        <label for="birthdate">Geboortedatum</label>
+                        <input type="date" id="birthdate" name="Geboortedatum" required>
+                    </div>
+                </div>
+
+
+                <label for="topic">Onderwerp</label>
+                <select id="topic" name="send-to" required>
+                    <option value="" disabled selected>Kies onderwerp van het bericht</option>
+                    <option value="0">Algemeen</option>
+                    <option value="1">Pokemon Violet</option>
+                    <option value="2">Pokemon Legends Arceus</option>
+                    <option value="3">Pokemon Brilliant Diamond</option>
+                </select>
+                <label for="message">Bericht</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <div class="yesno-container">
+                    <label for="yesno">Inschrijven voor nieuwsbrief?</label>
+
+                    <div class="yesno-button">
+                        <input type="radio" id="yesno" name="yesno" value="yesno" required>
+                        <label for="yesno">Ja</label>
+
+                        <input type="radio" id="no" name="yesno" value="no">
+                        <label for="no">Nee</label>
+                    </div>
+
+
+                </div>
+
+                <div class="tc-container">
+                    <input type="checkbox" id="tc" name="tc" value="tc" required>
+                    <label for="tc">Ik ga akkoord met de algemene voorawaarden*</label>
+                </div>
+                 
+                <div class="form-button">
+                    <button type="submit">Submit button</button>
+                </div>
+                
+
+
+
+
+            </form>
+        </section>
+        
+    </main>
+
+    <footer id="footer">
+     <div class="footer-left">
+        <div class="logo-text">
+            <img src="images/Poké_Ball_icon.svg.png" alt="PokeBall">
+            <h3>Logo</h3>
+        </div>
+        <h4>Copyright 2023 Bedrijfsnaam</h4>
+        <img src="images/smlogo.png" class="social" alt="socialmedia">
+     </div>
+     <div class="footer-right">
+        <h4>Privacyverklaring</h4>
+        <h4>Algemene voorwaarden</h4>
+        <h4>Cookiebeleid</h4>
+        <h4>Contact</h4>
+     </div>
+    </footer>
+</body>
+
+</html>
